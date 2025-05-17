@@ -1,0 +1,126 @@
+# depslib dependency file v1.0
+1746886597 source:c:\users\rendszergazda\desktop\beadando3\graphicslib64_0412\application.cpp
+	"Application.hpp"
+	"graphics.hpp"
+	<vector>
+
+1746886605 c:\users\rendszergazda\desktop\beadando3\graphicslib64_0412\application.hpp
+	"widgets.hpp"
+	"DropdownSelector.hpp"
+	"GameBoard.hpp"
+	"JatekMester.hpp"
+	<vector>
+
+1746886725 c:\users\rendszergazda\desktop\beadando3\graphicslib64_0412\widgets.hpp
+	"graphics.hpp"
+	<string>
+	<vector>
+
+1618178770 c:\users\rendszergazda\desktop\beadando3\graphicslib64_0412\include\graphics.hpp
+	<string>
+	<vector>
+
+1746887030 c:\users\rendszergazda\desktop\beadando3\graphicslib64_0412\dropdownselector.hpp
+	"widgets.hpp"
+	<vector>
+	<string>
+
+1746887190 c:\users\rendszergazda\desktop\beadando3\graphicslib64_0412\gameboard.hpp
+	"widgets.hpp"
+	"JatekMester.hpp"
+
+1746887300 c:\users\rendszergazda\desktop\beadando3\graphicslib64_0412\jatekmester.hpp
+	<vector>
+	<string>
+
+1746885512 source:c:\users\rendszergazda\desktop\beadando3\graphicslib64_0412\main.cpp
+	"Application.hpp"
+
+1746886847 source:c:\users\rendszergazda\desktop\beadando3\graphicslib64_0412\widgets.cpp
+	"widgets.hpp"
+	"graphics.hpp"
+
+1746892896 source:c:\users\rendszergazda\desktop\bead3\bead3v2\graphicslib64_0412\dropdownselector.cpp
+	"DropdownSelector.hpp"
+	"graphics.hpp"
+
+1746892168 c:\users\rendszergazda\desktop\bead3\bead3v2\graphicslib64_0412\dropdownselector.hpp
+	"widgets.hpp"
+	<vector>
+	<string>
+
+1746886725 c:\users\rendszergazda\desktop\bead3\bead3v2\graphicslib64_0412\widgets.hpp
+	"graphics.hpp"
+	<string>
+	<vector>
+
+1618178770 c:\users\rendszergazda\desktop\bead3\bead3v2\graphicslib64_0412\include\graphics.hpp
+	<string>
+	<vector>
+
+1746886847 source:c:\users\rendszergazda\desktop\bead3\bead3v2\graphicslib64_0412\widgets.cpp
+	"widgets.hpp"
+	"graphics.hpp"
+
+1746893025 source:c:\users\rendszergazda\desktop\bead3\bead3v2\graphicslib64_0412\application.cpp
+	"Application.hpp"
+	"graphics.hpp"
+
+1746892146 c:\users\rendszergazda\desktop\bead3\bead3v2\graphicslib64_0412\application.hpp
+	"widgets.hpp"
+	"GameBoardWidget.hpp"
+	"DropdownSelector.hpp"
+	"ButtonWidget.hpp"
+	"JatekMester.hpp"
+	<vector>
+
+1746891146 c:\users\rendszergazda\desktop\bead3\bead3v2\graphicslib64_0412\gameboardwidget.hpp
+	"widgets.hpp"
+	"JatekMester.hpp"
+
+1746891174 c:\users\rendszergazda\desktop\bead3\bead3v2\graphicslib64_0412\jatekmester.hpp
+	<vector>
+	<string>
+
+1746891155 source:c:\users\rendszergazda\desktop\bead3\bead3v2\graphicslib64_0412\gameboardwidget.cpp
+	"GameBoardWidget.hpp"
+	"graphics.hpp"
+
+1746890881 source:c:\users\rendszergazda\desktop\bead3\bead3v2\graphicslib64_0412\main.cpp
+	"Application.hpp"
+
+1747493293 source:c:\users\rendszergazda\desktop\bead3\bead3v2\graphicslib64_0412\jatekmester.cpp
+	"JatekMester.hpp"
+	<random>
+	<algorithm>
+
+1746891379 source:c:\users\rendszergazda\desktop\bead3\bead3v2\graphicslib64_0412\menuwidget.cpp
+	"MenuWidget.hpp"
+	"graphics.hpp"
+
+1746891383 c:\users\rendszergazda\desktop\bead3\bead3v2\graphicslib64_0412\menuwidget.hpp
+	"widgets.hpp"
+	<functional>
+
+1746892091 c:\users\rendszergazda\desktop\bead3\bead3v2\graphicslib64_0412\buttonwidget.hpp
+	"widgets.hpp"
+	<functional>
+	<string>
+
+1746892110 source:c:\users\rendszergazda\desktop\bead3\bead3v2\graphicslib64_0412\buttonwidget.cpp
+	"ButtonWidget.hpp"
+	"graphics.hpp"
+
+1746886847 source:c:\users\rendszergazda\desktop\bead3\beadando_3\beadando_3\graphicslib64_0412\widgets.cpp
+	"widgets.hpp"
+	"graphics.hpp"
+
+1746886725 c:\users\rendszergazda\desktop\bead3\beadando_3\beadando_3\graphicslib64_0412\widgets.hpp
+	"graphics.hpp"
+	<string>
+	<vector>
+
+1618178770 c:\users\rendszergazda\desktop\bead3\beadando_3\beadando_3\graphicslib64_0412\include\graphics.hpp
+	<string>
+	<vector>
+
