@@ -3,7 +3,7 @@
 using namespace genv;
 
 DropdownSelector::DropdownSelector(int x, int y, int sx, int sy, const std::vector<std::string>& options, int max_visible_items)
-    : Widget(x, y, sx, sy), _options(options), _selected_index(0), _is_open(false) ,
+    : Widget(x, y, sx, sy), _options(options), _selected_index(0), _is_open(false),
       _max_visible_items(max_visible_items), _scroll_offset(0) {}
 
 void DropdownSelector::draw() {
@@ -70,7 +70,7 @@ void DropdownSelector::handle(event ev) {
     }
 
     if (ev.type == ev_key) {
-        if (ev.keycode == key_up && _selected_index > 0) {
+          if (ev.keycode == key_up && _selected_index > 0) {
             _selected_index--;
             if (_selected_index < _scroll_offset) _scroll_offset--;
             _is_open = true;

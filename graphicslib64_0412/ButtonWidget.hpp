@@ -10,7 +10,6 @@ class ButtonWidget : public Widget {
     std::function<void()> on_click;
 
 public:
-
     ButtonWidget(int x, int y, int sx, int sy, const std::string& label, std::function<void()> on_click);
     void draw() override;
     void handle(genv::event ev) override;

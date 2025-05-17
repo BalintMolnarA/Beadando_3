@@ -14,7 +14,6 @@ protected:
     int _scroll_offset;
 
 public:
-
     DropdownSelector(int x, int y, int sx, int sy, const std::vector<std::string>& options, int max_visible_items);
     void draw() override;
     void handle(genv::event ev) override;

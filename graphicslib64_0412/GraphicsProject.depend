@@ -115,7 +115,7 @@
 	"widgets.hpp"
 	"graphics.hpp"
 
-1746886725 c:\users\rendszergazda\desktop\bead3\beadando_3\beadando_3\graphicslib64_0412\widgets.hpp
+1747524746 c:\users\rendszergazda\desktop\bead3\beadando_3\beadando_3\graphicslib64_0412\widgets.hpp
 	"graphics.hpp"
 	<string>
 	<vector>
@@ -123,4 +123,53 @@
 1618178770 c:\users\rendszergazda\desktop\bead3\beadando_3\beadando_3\graphicslib64_0412\include\graphics.hpp
 	<string>
 	<vector>
+
+1747524735 source:c:\users\rendszergazda\desktop\bead3\beadando_3\beadando_3\graphicslib64_0412\application.cpp
+	"Application.hpp"
+	"graphics.hpp"
+
+1747507244 c:\users\rendszergazda\desktop\bead3\beadando_3\beadando_3\graphicslib64_0412\application.hpp
+	"widgets.hpp"
+	"GameBoardWidget.hpp"
+	"DropdownSelector.hpp"
+	"ButtonWidget.hpp"
+	"JatekMester.hpp"
+	<vector>
+
+1747524728 c:\users\rendszergazda\desktop\bead3\beadando_3\beadando_3\graphicslib64_0412\gameboardwidget.hpp
+	"widgets.hpp"
+	"JatekMester.hpp"
+
+1747524732 c:\users\rendszergazda\desktop\bead3\beadando_3\beadando_3\graphicslib64_0412\jatekmester.hpp
+	<vector>
+	<string>
+
+1747507377 c:\users\rendszergazda\desktop\bead3\beadando_3\beadando_3\graphicslib64_0412\dropdownselector.hpp
+	"widgets.hpp"
+	<vector>
+	<string>
+
+1747507322 c:\users\rendszergazda\desktop\bead3\beadando_3\beadando_3\graphicslib64_0412\buttonwidget.hpp
+	"widgets.hpp"
+	<functional>
+	<string>
+
+1747524752 source:c:\users\rendszergazda\desktop\bead3\beadando_3\beadando_3\graphicslib64_0412\buttonwidget.cpp
+	"ButtonWidget.hpp"
+	"graphics.hpp"
+
+1747524736 source:c:\users\rendszergazda\desktop\bead3\beadando_3\beadando_3\graphicslib64_0412\dropdownselector.cpp
+	"DropdownSelector.hpp"
+	"graphics.hpp"
+
+1747524724 source:c:\users\rendszergazda\desktop\bead3\beadando_3\beadando_3\graphicslib64_0412\gameboardwidget.cpp
+	"GameBoardWidget.hpp"
+	"graphics.hpp"
+
+1747524727 source:c:\users\rendszergazda\desktop\bead3\beadando_3\beadando_3\graphicslib64_0412\jatekmester.cpp
+	"JatekMester.hpp"
+	<random>
+
+1747506755 source:c:\users\rendszergazda\desktop\bead3\beadando_3\beadando_3\graphicslib64_0412\main.cpp
+	"Application.hpp"
 
