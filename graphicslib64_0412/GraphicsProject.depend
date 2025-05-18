@@ -124,7 +124,7 @@
 	<string>
 	<vector>
 
-1747524735 source:c:\users\rendszergazda\desktop\bead3\beadando_3\beadando_3\graphicslib64_0412\application.cpp
+1747567152 source:c:\users\rendszergazda\desktop\bead3\beadando_3\beadando_3\graphicslib64_0412\application.cpp
 	"Application.hpp"
 	"graphics.hpp"
 
@@ -149,7 +149,7 @@
 	<vector>
 	<string>
 
-1747507322 c:\users\rendszergazda\desktop\bead3\beadando_3\beadando_3\graphicslib64_0412\buttonwidget.hpp
+1747567188 c:\users\rendszergazda\desktop\bead3\beadando_3\beadando_3\graphicslib64_0412\buttonwidget.hpp
 	"widgets.hpp"
 	<functional>
 	<string>
@@ -162,13 +162,14 @@
 	"DropdownSelector.hpp"
 	"graphics.hpp"
 
-1747524724 source:c:\users\rendszergazda\desktop\bead3\beadando_3\beadando_3\graphicslib64_0412\gameboardwidget.cpp
+1747567380 source:c:\users\rendszergazda\desktop\bead3\beadando_3\beadando_3\graphicslib64_0412\gameboardwidget.cpp
 	"GameBoardWidget.hpp"
 	"graphics.hpp"
 
-1747524727 source:c:\users\rendszergazda\desktop\bead3\beadando_3\beadando_3\graphicslib64_0412\jatekmester.cpp
+1747567646 source:c:\users\rendszergazda\desktop\bead3\beadando_3\beadando_3\graphicslib64_0412\jatekmester.cpp
 	"JatekMester.hpp"
 	<random>
+	<algorithm>
 
 1747506755 source:c:\users\rendszergazda\desktop\bead3\beadando_3\beadando_3\graphicslib64_0412\main.cpp
 	"Application.hpp"

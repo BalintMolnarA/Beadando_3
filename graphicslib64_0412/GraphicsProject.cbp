@@ -61,8 +61,6 @@
 		<Unit filename="GameBoardWidget.hpp" />
 		<Unit filename="JatekMester.cpp" />
 		<Unit filename="JatekMester.hpp" />
-		<Unit filename="MenuWidget.cpp" />
-		<Unit filename="MenuWidget.hpp" />
 		<Unit filename="main.cpp" />
 		<Unit filename="widgets.cpp" />
 		<Unit filename="widgets.hpp" />

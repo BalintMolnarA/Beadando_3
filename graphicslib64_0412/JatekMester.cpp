@@ -1,5 +1,6 @@
 #include "JatekMester.hpp"
 #include <random>
+#include <algorithm>
 
 JatekMester::JatekMester(int size) : size(size), current_player(X), state(RUNNING) {
     if (size < 15 || size > 30) size = 15;
@@ -20,7 +21,9 @@ bool JatekMester::make_move(int row, int col) {
 }
 
 bool JatekMester::make_computer_move() {
-    return false;
+    if (state != RUNNING || current_player != O) return false;
+    auto [row, col] = find_best_move();
+    return make_move(row, col);
 }
 
 JatekMester::GameState JatekMester::get_state() const { return state; }
@@ -68,5 +71,72 @@ bool JatekMester::is_board_full() const {
 }
 
 std::pair<int, int> JatekMester::find_best_move() const {
-    return {-1, -1};
+    std::vector<std::pair<int, int>> empty_cells;
+    for (int r = 0; r < size; r++) {
+        for (int c = 0; c < size; c++) {
+            if (board[r][c] == EMPTY) empty_cells.emplace_back(r, c);
+        }
+    }
+
+    auto check_potential_win = [&](Cell player) {
+        for (auto [r, c] : empty_cells) {
+            JatekMester temp = *this;
+            temp.board[r][c] = player;
+            if (temp.check_win(player,r,c)) return std::make_pair(r, c);
+        }
+        return std::make_pair(-1,-1);
+    };
+    auto win = check_potential_win(O);
+    if (win.first != -1) return win;
+
+    auto block = check_potential_win(X);
+    if (block.first != -1) return block;
+
+    auto check_three_in_a_row = [&](Cell player) {
+        for (int r = 0; r < size; r++) {
+            for (int c = 0; c < size; c++) {
+                if (board[r][c] != player) continue;
+                for (auto [dr, dc] : std::vector<std::pair<int, int>>{{0, 1}, {1, 0}, {1, 1}, {1, -1}}) {
+                    int count_forward = 1;
+                    int r_forward = r + dr, c_forward = c + dc;
+                    while (r_forward >= 0 && r_forward < size && c_forward >= 0 && c_forward < size &&
+                           board[r_forward][c_forward] == player) {
+                        count_forward++;
+                        r_forward += dr;
+                        c_forward += dc;
+                    }
+                    int count_backward = 0;
+                    int r_backward = r - dr, c_backward = c - dc;
+                    while (r_backward >= 0 && r_backward < size && c_backward >= 0 && c_backward < size &&
+                            board[r_backward][c_backward] == player) {
+                        count_backward++;
+                        r_backward -= dr;
+                        c_backward -= dc;
+                    }
+                    if (count_forward + count_backward == 3) {
+                        if (r_forward >= 0 && r_forward < size && c_forward >= 0 && c_forward < size &&
+                            board[r_forward][c_forward] == EMPTY) {
+                            return std::make_pair(r_forward, c_forward);
+                        }
+                        if (r_backward >= 0 && r_backward < size && c_backward >= 0 && c_backward < size &&
+                            board[r_backward][c_backward] == EMPTY) {
+                            return std::make_pair(r_backward, c_backward);
+                        }
+                    }
+                }
+            }
+        }
+        return std::make_pair(-1, -1);
+    };
+
+    auto block_three_x = check_three_in_a_row(X);
+    if (block_three_x.first !=-1) return block_three_x;
+
+    auto continue_three_o = check_three_in_a_row(O);
+    if (continue_three_o.first !=-1) return continue_three_o;
+
+    std::random_device rd;
+    std::mt19937 gen(rd());
+    std::uniform_int_distribution<> dis(0,empty_cells.size() - 1);
+    return empty_cells[dis(gen)];
 }
